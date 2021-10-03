@@ -8,9 +8,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-         trabajador()
-    }
+        trabajador()
+    } dj
 
+
+      //Ejercicio 1
     fun trabajador(){
 
         var e1=Trabajador()
@@ -26,10 +28,23 @@ class MainActivity : AppCompatActivity() {
         e1.resultado = (e1.HorasTrabajadasExtras + e1.HorasTrabajadas)
         println("La horas total que el trabajador a trabajado es de: "+e1.resultado+"horas")
 
+
+
+
     }
+             //Ejercicio 2
+             fun tablaMul(numero:Int)
+             {
+                 val valor = 20
+
+                 var operacion = 0
+                 println("Tabla de multiplicar del $numero")
+                 for (i in 1..valor)
+                 {
+                     operacion = numero * i
+                     println("$numero x $i = $operacion")
+                 }
 
 
-
-
-
+             }
 }
